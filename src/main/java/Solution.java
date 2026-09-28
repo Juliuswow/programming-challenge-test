@@ -5,7 +5,9 @@ public class Solution {
      */
     public int add(int a, int b) {
         //replace 0  with your implementation
-        return 0;
+        
+        int add = a+b;
+        return add;
         //throw new UnsupportedOperationException("Not implemented yet");
     }
 
@@ -14,7 +16,9 @@ public class Solution {
      */
     public int subtract(int a, int b) {
         // replace 0  with your implementation
-        return 0;
+        int minus=a-b;
+        
+        return minus;
         //throw new UnsupportedOperationException("Not implemented yet");
     }
 
@@ -22,8 +26,8 @@ public class Solution {
      * return the product of a and b.
      */
     public int multiply (int a, int b){
-        // replace 0  with your implementation
-        return 0;
+        int multiply=a * b;
+        return multiply;
     }
 
     /**
@@ -32,7 +36,8 @@ public class Solution {
 
     public double divide (int a, int b){
         // replace 0.0  with your implementation
-        return 0;
+        double divide=(double)a/b;
+        return divide;
     }
 
     /**
@@ -40,7 +45,8 @@ public class Solution {
      */
     public String concatenate (String word1, String word2){
         // replace ""  with your implementation
-        return "";
+        String concatenate=word1 + word2;
+        return concatenate;
     }
 
 
@@ -52,15 +58,23 @@ public class Solution {
      * Return x.
  */
     public int transform(int a) {
-        // replace 0 with your implementation
-        return 0;
+        int x = a;      
+        x = x + 4;     
+        x = x * 3;      
+        x = x - a;       
+        return x;
     }
 
     public static void main(String[] args) {
         //this main method is for manually debugging
         Solution solution = new Solution();
-                        //change "solution" method to any of the methods you would like to test
-        System.out.println(solution.add(1, 2));
+        System.out.println( solution.add(1, 2)); 
+        System.out.println( solution.subtract(5, 3));
+        System.out.println( solution.multiply(4, 6));
+        System.out.println( solution.divide(10, 2));
+        System.out.println( solution.concatenate("Hello", "World"));
+        System.out.println( solution.transform(5));
+
 
     }
 }
